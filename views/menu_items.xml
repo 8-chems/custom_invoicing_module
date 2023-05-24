@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="daily_metal_price_menu">
+            <field name="name">Daily Metal Price</field>
+            <field name="view_id" ref="custom_invoicing_module.daily_metal_price_wizard"/>
+            <field name="res_model">daily.metal.price</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem
+                id="menu_metal_price"
+                name="Metal Price"
+                parent="account.menu_finance"
+                sequence="9"
+                action="daily_metal_price_menu"
+                groups="account.group_account_invoice"
+        />
+    </data>
+</odoo>

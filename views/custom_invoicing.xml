@@ -1,0 +1,12 @@
+<odoo>
+    <record model="ir.ui.view" id="your_model_form_view">
+        <field name="name">account.model.inherit.view</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="today_metal_price" create="true"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

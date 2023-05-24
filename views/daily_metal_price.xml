@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="daily_metal_price_form_view">
+            <field name="name">daily.metal.price.view.form</field>
+            <field name="model">daily.metal.price</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <field name="price"/>
+                        <field name="target_date"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+<!--        <record model="ir.ui.view" id="daily_metal_price_tree_view">-->
+<!--            <field name="name">daily.metal.price.view.tree</field>-->
+<!--            <field name="model">daily.metal.price</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <field name="price"/>-->
+<!--                <field name="target_date"/>-->
+<!--            </field>-->
+<!--        </record>-->
+    </data>
+</odoo>

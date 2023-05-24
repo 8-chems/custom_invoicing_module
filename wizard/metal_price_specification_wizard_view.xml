@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="daily_metal_price_wizard" model="ir.ui.view">
+        <field name="name">custom_invoicing_module.metal.price.specification</field>
+        <field name="model">metal.price.specification</field>
+         <field name="arch" type="xml">
+
+        <form name="arch" type="xml" string="Specification of Metal price">
+            <group col="2">
+                <field name="target_date"/>
+                <field name="price"/>
+            </group>
+            <footer>
+                <button
+                        string="Save"
+                        name="save_record"
+                        type="object"
+                        class="oe_highlight"
+                />
+                <button string="Cancel" class="oe_link" special="cancel"/>
+            </footer>
+        </form>
+         </field>
+
+    </record>
+
+</odoo>
